@@ -12,5 +12,5 @@ add new Service Provider to the array of Service Providers in file config/app.ph
          * Laravel Framework Service Providers...
          */
         // ... other providers
-        Laraveldaily\Timezones\TimezonesServiceProvider::class,
+        Razzul\Timezones\TimezonesServiceProvider::class,
 ```
