@@ -1,6 +1,6 @@
 <?php
 
-namespace Laraveldaily\Timezones;
+namespace Razzul\Timezones;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,7 +15,7 @@ class TimezonesServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/views', 'timezones');
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/laraveldaily/timezones'),
+            __DIR__.'/views' => base_path('resources/views/razzul/timezones'),
         ]);
     }
 
@@ -27,6 +27,6 @@ class TimezonesServiceProvider extends ServiceProvider
     public function register()
     {
         include __DIR__.'/routes.php';
-        $this->app->make('Laraveldaily\Timezones\TimezonesController');
+        $this->app->make('Razzul\Timezones\TimezonesController');
     }
 }
